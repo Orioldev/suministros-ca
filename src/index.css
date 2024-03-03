@@ -9,11 +9,34 @@
 body {
   font-family: Poppins, sans-serif;
   box-sizing: border-box;
+  background: white;
 }
 
 h1{
   text-align: center;
   margin-top: 1.5em;
+}
+
+form p span{
+  color: rgb(173, 69, 28);
+  transition: color .3s ease-in-out;
+}
+form p span:hover{
+  color: rgb(238, 151, 117);
+
+}
+
+.link{
+  text-decoration: none;
+}
+
+.info-pagina{
+  margin: 0 15%;
+  text-align: center;
+
+}
+.info-pagina p{
+  color: rgb(61, 61, 61);
 }
 
 section{
@@ -23,24 +46,115 @@ section{
   justify-content: center;
   justify-content: space-between;
   align-items: center;
-  margin:3rem auto;
-  background-color: blueviolet;
-  padding: 2rem;
+  margin:1rem auto;
+  padding: 1rem;
+}
+.img-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  
+}
+
+.img-container img{
+  margin-right:1rem ;
+}
+
+
+
+.img-container h1{
+  margin-bottom:4rem;
+  border-bottom: 4px solid orangered;
 }
 
 section .image-container{
+  display: flex;
   width: 50%;
   height: 16rem;
   margin-right: 1rem;
+  justify-content: center;
+  align-items: center;
 
-  background-color: rgb(165, 67, 67);
+
 }
+
+section .image-container img{
+  width: 50%;
+  background-size: contain;
+  transition: transform 1s ease-in-out;
+
+ 
+}
+section .image-container img {
+  animation: rotate infinite 7s linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
 section .form-container{
   margin-left: 1rem;
 
   width: 50%;
   height: 16rem;
+  text-align: center;
+}
+
+section .form-container .form-login{
+  display: flex;
+  flex-direction: column;
+
+}
+
+section .form-container .form-login input{
+  height: 1.5rem;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid gray;
+  border-radius: 1rem;
+}
+
+section .form-container h2{
+  margin-bottom: 1rem;
+}
+
+section .form-container .form-login button{
+  width: 100%;
+  height: 2.4rem;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  border: 1px solid gray;
+  border-radius: 1rem;
+  background-color: rgb(65, 65, 192);
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
   
-  background-color: rgb(194, 194, 245);
+
+}
+section .form-container .form-login button:hover{
+  background-color: rgb(49, 49, 146);
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 700px) {
+  section{
+    display: flex;
+    flex-direction: column;
+
+  }
 }
 
