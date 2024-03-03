@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Logo from '../assets/logo.png';
 
 export const Login = () => {
   return (
     <>
-      <div>
-        <img src="" alt="" />
+      <div className='img-container'>
+        <div> 
+            <img src={ Logo } alt='Logo' />
+        </div>
         <h1>Suministros C.A</h1>
       </div>  
 
