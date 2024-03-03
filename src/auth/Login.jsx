@@ -3,7 +3,21 @@ import React from 'react'
 export const Login = () => {
   return (
     <>
-        <h1>Inicia Sesion</h1>
+      <div>
+        <img src="" alt="" />
+        <h1>Suministros C.A</h1>
+      </div>  
+
+      <section>
+              <div className='image-container'>
+
+              </div>
+              
+              <div className='form-container'>
+                  <h3>Inicia Sesion</h3>
+              </div>
+      </section>
+        
     </>
   )
 }
