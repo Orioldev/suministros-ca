@@ -12,6 +12,10 @@ body {
   background: white;
 }
 
+/*--------------------------------- LOGIN Y REGISTRO----------------------------------------------------------------*/
+
+
+
 h1{
   text-align: center;
   margin-top: 1.5em;
@@ -158,3 +162,63 @@ section .form-container .form-login button:hover{
   }
 }
 
+/*---------------------------------------- NAVBAR------------------------------------------*/
+.nav-container {
+  background-color: #333; /* Color de fondo */
+  padding: 10px; /* Espaciado interno */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-vendedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Ancho máximo */
+  margin: 0 auto; /* Centrado horizontal */
+}
+
+.logo-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo-nav img {
+  margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+.enlaces-nav ul {
+  list-style: none; /* Eliminar viñetas */
+  display: flex;
+  margin-left: 1rem;
+}
+
+.enlaces-nav li {
+  margin-right: 20px; /* Espacio entre elementos */
+  color: #fff; /* Color del texto */
+  cursor: pointer; /* Cambiar cursor al pasar sobre los elementos */
+}
+
+.info-user-nav {
+  display: flex;
+  align-items: center;
+}
+
+.info-user-nav span {
+  color: #fff; /* Color del texto */
+  margin-right: 10px; /* Espacio entre el texto y el botón */
+}
+
+.info-user-nav button {
+  background-color: #ff6600; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none;
+  padding: 5px 10px; /* Espaciado interno */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+}
+/*
+.nav-vendedor{
+
+}
+*/

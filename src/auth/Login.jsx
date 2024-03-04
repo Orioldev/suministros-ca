@@ -1,18 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Logo from '../assets/logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export const Login = () => {
+
+  const navigate = useNavigate();
+
+  //States
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("")
+  
+  //Funciones de los eventos
+  const inputEmailChange = (e)=>setEmail(e.target.value)
+  const inputPasswordChange = (e)=>setPassword(e.target.value)
+
+  
+  //submit del formulario, simulacion
+  const onUserSubmit = (e) => {
+    e.preventDefault;
+    navigate("/vendedor")
+  };
+
+
+  
+  
   return (
     <>
       <div className='img-container'>
         <div > 
             <img height="75px" src={ Logo } alt='Logo' />
         </div>
-          <h1>Suministros C.A</h1>  
+          <h1>Import Suministros F&P, C.A</h1>  
         </div>  
         <div className='info-pagina'>
-        <p><strong>Suminstros C.A </strong> es una aplicacion en donde los administradores y vendedores manejan la logistica necesaria para vender los productos de una empresa mediante recepcion y cobro de pedidos.</p>
+        <p> Es una aplicacion en donde los administradores y vendedores manejan la logistica necesaria para vender los productos de la empresa <strong>Import Suministros F&P, C.A</strong>  mediante recepcion y cobro de pedidos.</p>
         
         </div>
       <section>
@@ -22,11 +43,11 @@ export const Login = () => {
               
               <div className='form-container'>
                   <h2>Inicia Sesion</h2>
-                  <form className='form-login ' >
-                      <input type="email" placeholder='correo' />
-                      <input type="password" placeholder='contraseña' />
+                  <form onSubmit={onUserSubmit} className='form-login ' >
+                      <input value={email} onChange={inputEmailChange} type="email" placeholder='correo' />
+                      <input value={password} onChange={inputPasswordChange} type="password" placeholder='contraseña' />
                       <p>¿Quieres trabajar con nosotros?  <Link className='link'  to="/registro" ><span>postulate</span></Link> </p>
-                      <button type="submit">Ingresar</button> 
+                      <button  type='submit' >Ingresar</button> 
                   </form>
               </div>
       </section>
