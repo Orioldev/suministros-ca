@@ -164,19 +164,21 @@ section .form-container .form-login button:hover{
 
 /*---------------------------------------- NAVBAR------------------------------------------*/
 .nav-container {
-  background-color: #333; /* Color de fondo */
+  background-color: #21213A; /* Color de fondo */
   padding: 10px; /* Espaciado interno */
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 4rem;
 }
 
 .nav-vendedor {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px; /* Ancho máximo */
+  max-width: 1360px; /* Ancho máximo */
   margin: 0 auto; /* Centrado horizontal */
+  color: white;
 }
 
 .logo-nav {
@@ -186,6 +188,10 @@ section .form-container .form-login button:hover{
 
 .logo-nav img {
   margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+.enlaces-nav{
+  display: flex;
+  align-items: center;
 }
 
 .enlaces-nav ul {
@@ -198,11 +204,29 @@ section .form-container .form-login button:hover{
   margin-right: 20px; /* Espacio entre elementos */
   color: #fff; /* Color del texto */
   cursor: pointer; /* Cambiar cursor al pasar sobre los elementos */
+  transition: all .3s ease-in-out;
+  padding-bottom: 0.3rem;
+}
+
+.enlaces-nav li:hover{
+  border-bottom: 1px solid white;
+  font-size:15px;
+}
+
+.enlaces-nav ul li span{
+  background-color:#ff7b22; ;
+  color: white;
+  padding: 0.2rem 0.5rem ;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 50%;
+  
 }
 
 .info-user-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .info-user-nav span {
@@ -214,11 +238,91 @@ section .form-container .form-login button:hover{
   background-color: #ff6600; /* Color de fondo del botón */
   color: #fff; /* Color del texto del botón */
   border: none;
+  border-radius: 3px;
   padding: 5px 10px; /* Espaciado interno */
   cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+  transition: background-color .3s ease-in-out;
 }
-/*
-.nav-vendedor{
+.info-user-nav button:hover {
+  background-color: #bd4b00; /* Color de fondo del botón */
+}
+
+.nav-menu-boton{
+  display: none;
+  color: white;
+  font-size: x-large;
 
 }
-*/
+.query-nav{
+  display: none;
+
+}
+@media (max-width: 754px) { /* Media query for screens up to 700px wide */
+  .nav-container {
+    background-color: #21213A; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+    display: flex;
+    height: 2rem;
+  }
+
+  .enlaces-nav {
+    display: none;
+    z-index: 50;
+  }
+
+  .enlaces-nav ul {
+    display: block;
+    z-index: 50;
+  }
+
+  .nav-menu-boton{
+    display: block;
+    color: white;
+    font-size: x-large;
+    width: 4rem;
+  }
+  .query-nav{
+    display: none; 
+    
+    
+  }
+
+  .query-nav ul{
+    background-color:rgb(56, 61, 63) ;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
+  }
+  .query-nav ul li{
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .query-nav .info-user-nav {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .query-nav ul li span{
+    background-color:#ff7b22; ;
+    color: white;
+    padding: 0.2rem 0.5rem ;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 50%;
+  }
+  .query-nav ul .info-user-nav button {
+    background-color: #ff6600; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    transition: background-color .3s ease-in-out;
+  }
+  
+
+  
+}
