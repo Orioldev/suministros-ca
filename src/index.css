@@ -223,6 +223,10 @@ section .form-container .form-login button:hover{
   
 }
 
+.nav-link {
+  text-decoration: none;
+}
+
 .info-user-nav {
   display: flex;
   align-items: center;
@@ -263,6 +267,8 @@ section .form-container .form-login button:hover{
     padding: 10px; /* Espaciado interno */
     display: flex;
     height: 2rem;
+    position: fixed;
+    width: 100%;
   }
 
   .enlaces-nav {
@@ -283,7 +289,10 @@ section .form-container .form-login button:hover{
   }
   .query-nav{
     display: none; 
-    
+    z-index: 50;
+    position: fixed;
+    width: 100%;
+    margin-top: 3.2rem;
     
   }
 
@@ -299,6 +308,7 @@ section .form-container .form-login button:hover{
   .query-nav ul li{
     display: block;
     margin-bottom: 1rem;
+    color: white;
   }
   .query-nav .info-user-nav {
     display: block;
@@ -315,6 +325,7 @@ section .form-container .form-login button:hover{
   }
   .query-nav ul .info-user-nav button {
     background-color: #ff6600; /* Color de fondo del botón */
+    width: 15%;
     color: #fff; /* Color del texto del botón */
     border: none;
     border-radius: 3px;
@@ -322,7 +333,106 @@ section .form-container .form-login button:hover{
     cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
     transition: background-color .3s ease-in-out;
   }
-  
+   
+}
 
+/*-------------------------------------style card vendedor----------------------*/
+.contenedor-cards{
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
   
+  margin: 0 auto;
+  height: 100vh;
+
+}
+
+.card-producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  margin-left: 15%;
+  max-width: 300px;
+  overflow: hidden;
+  padding: 1rem;
+  margin-top: 15rem;
+  margin-bottom: 19rem;
+}
+
+.contenedor-imagen-card-producto{
+  width: 100%;
+  height: 50%;
+  padding: 1rem;
+
+
+}
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 15rem;
+  
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+}
+
+button {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #0069d9;
+  border-color: #0069d9;
+}
+
+/* Media queries para Responsive UI */
+
+@media (max-width: 600px ) {
+  .contenedor-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+  }
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+  /* Estilos para dispositivos con resoluciones entre 700px y 1000px */
+  .contenedor-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+    
+  }
+
 }

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Logo from "../../assets/logo.png"
 import { TiThMenu } from "react-icons/ti";
 import { IoMdClose } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
     const [mostrarMenu, setMostrarMenu] = useState(false)
@@ -18,9 +19,9 @@ export const Navbar = () => {
             </div>
             <div className='enlaces-nav'>
                 <ul>
-                    <li>Productos</li>
-                    <li>Cobranzas <span>5</span> </li>
-                    <li>Historial</li>
+                   <Link className='nav-link' to="/vendedor"><li>Productos</li></Link>  
+                   <Link className='nav-link' to="/cobranzas" ><li>Cobranzas <span>5</span> </li></Link>  
+                   <Link className='nav-link' to="/historial"><li>Historial</li></Link>
                     <div className='info-user-nav'>
                         <span>Vendedor</span>
                         <button type='button'>Logout</button>
@@ -40,14 +41,14 @@ export const Navbar = () => {
          style={{ display: mostrarMenu ? "block" : "none" }}
      >   
         <ul>
-            <li>Productos</li>
-            <li>Cobranzas <span>5</span> </li>
-            <li>Historial</li>
-            <div className='info-user-nav'>
-                <span>Vendedor</span>
-                <button type='button'>Logout</button>
-            </div>
-       </ul>
+            <Link className='nav-link' to="/vendedor"><li>Productos</li></Link>  
+            <Link className='nav-link' to="/cobranzas" ><li>Cobranzas <span>5</span> </li></Link>  
+            <Link className='nav-link' to="/historial"><li>Historial</li></Link>
+                <div className='info-user-nav'>
+                    <span>Vendedor</span>
+                    <button type='button'>Logout</button>
+                </div>
+        </ul>
     </div>
    </>
   )
