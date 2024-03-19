@@ -413,6 +413,9 @@ button:hover {
   border-color: #0069d9;
 }
 
+
+
+
 /* Media queries para Responsive UI */
 
 @media (max-width: 600px ) {
@@ -436,3 +439,271 @@ button:hover {
   }
 
 }
+
+
+
+/*------------------------------------MODAL DE PRDUCTO VENDEDOR------------------------------*/
+.contenedor-modal-pedido{
+  margin: 2rem;
+  border-radius: 1rem;
+  width: 65%;
+  background-color: white;
+  border: 1px solid rgb(190, 186, 186);
+
+  z-index: 100;
+  position: fixed;
+  top: 2%;
+  bottom:3%;
+  left: 15%;
+  
+  overflow-y:auto ;
+  display: none;
+}
+
+.close-container-pedidos{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding:1rem ;
+  cursor: pointer;
+}
+
+.titulo-modal-pedido{
+  text-align: center;
+  margin: 2.5rem;
+}
+
+.container-modal{
+  display: flex;
+  justify-content: center;
+  
+  height: 70vh;
+
+}
+
+.productos-pedidos{
+  display: flex;
+  width: 40%;
+}
+.datos-comprador{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 2rem;
+}
+.comprador{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+
+
+}
+
+.producto-total-cantidad{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.producto-total-cantidad input{
+  margin: 0rem 1rem 0rem 0rem;
+  border: 1px solid rgb(201, 196, 196);
+  border-radius: 10px;
+  padding: 7px;
+
+}
+
+.boton-enviar-pedido{
+  background-color: rgb(27, 138, 42);
+  transition: background-color .5s;
+}
+.boton-enviar-pedido:hover{
+  background-color: rgb(19, 85, 28);
+}
+
+
+/*----------------------------------historial................................*/
+.historial-container {
+  margin: 0 auto;
+width: 80%;  
+} 
+.historial-container h3{
+  text-align: center;
+  margin-top: 2rem;
+}
+.historial-container h2{
+  text-align: center;
+  margin-top: 2rem;
+}
+.historial-container form{
+  display: flex;
+  align-items: center;
+
+}
+.historial-container form input{
+  margin-left: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.1rem;
+  height: 20px;
+  border: 1px solid rgb(179, 177, 177);
+  
+
+}
+.historial-container form button{
+  height: 28px;
+  width: 60%;
+  padding-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-bottom: 0.2rem;
+  
+}
+.contenedor-clientes{
+  display: flex;
+  align-items: center;
+}
+.botones-crud-historial{
+  display: flex;
+  width: 40%;
+  margin-left: 2rem;
+  justify-content: space-around;
+}
+
+.botones-crud-historial button{
+  margin-left: 1rem;
+}
+.lista-clientes-historial{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+
+/*----------------------cobranzas----------------------------*/
+
+.container-cobranza{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+
+}
+.item-cobranza{
+background-color: rgb(202, 197, 197);
+padding: 0.8rem;
+margin-bottom: 1rem;
+border-radius: 50px;
+text-align: center;
+width: 100%;
+}
+.container-items-cobrazas{
+  margin: 0 auto;
+}
+
+.container-cobranza h1{
+  margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+esta es la clase de un carrito
+
+.orden-pedido{
+    display: flex;
+    align-items: center;
+    background-color: #21213A;
+    justify-content: center;
+    color:white;
+    width: 10%;
+    padding-left:0.3rem ;
+    padding-right:0.3rem ;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+
+    border-radius: 0.3rem;
+    box-shadow: black;
+
+    
+    position: fixed;
+    top: 80%;
+    left: 85%;
+    z-index: 55;
+
+
+    
+}
+.orden-pedido span{
+  margin-left: 0.3rem;
+  display: flex;
+}
+.orden-pedido  p{
+  margin-left:0.5rem;
+  
+  background-color: #bd4b00;
+  padding: 0.5rem 1rem ;
+  height: 1.5rem;
+  width: 0.5rem;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+
+*/
