@@ -7,9 +7,6 @@ export const CardProducto = ({ producto,modalPedido }) => {
 
   return (
     <>
-    
-   
-  
 
     <div className="card-producto">
       <div className='contenedor-imagen-card-producto' ><img src={imagen} alt={nombre} className="card-img-top" />  </div>
@@ -23,8 +20,5 @@ export const CardProducto = ({ producto,modalPedido }) => {
     </div>
 
     </>
-    
-    
-    
   );
 };

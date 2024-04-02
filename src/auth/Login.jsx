@@ -17,7 +17,10 @@ export const Login = () => {
   
   //submit del formulario, simulacion
   const onUserSubmit = (e) => {
-    e.preventDefault;
+    e.preventDefault; 
+    if (email == "ferreiraadrian2022@gmail.com" && password == "123456" ) 
+    navigate("/admin/productos")
+    else
     navigate("/vendedor")
   };
 

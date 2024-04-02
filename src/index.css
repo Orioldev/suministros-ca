@@ -259,7 +259,11 @@ section .form-container .form-login button:hover{
 }
 .query-nav{
   display: none;
+}
 
+.h2-admin{
+  text-align: center;
+  margin-top: 4rem;
 }
 @media (max-width: 754px) { /* Media query for screens up to 700px wide */
   .nav-container {
@@ -268,6 +272,7 @@ section .form-container .form-login button:hover{
     display: flex;
     height: 2rem;
     position: fixed;
+    top: 0rem;
     width: 100%;
   }
 
@@ -289,11 +294,16 @@ section .form-container .form-login button:hover{
   }
   .query-nav{
     display: none; 
-    z-index: 50;
+    z-index: 70;
     position: fixed;
     width: 100%;
     margin-top: 3.2rem;
+    margin-bottom: 10rem;
     
+  }
+  .h2-admin{
+    text-align: center;
+    margin-top: 4rem;
   }
 
   .query-nav ul{
@@ -303,6 +313,7 @@ section .form-container .form-login button:hover{
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 1rem;
+    margin-top: -4rem;
 
   }
   .query-nav ul li{
@@ -578,6 +589,7 @@ width: 80%;
 }
 .lista-clientes-historial{
   display: flex;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   justify-content: center;
@@ -610,7 +622,129 @@ width: 100%;
   margin-bottom: 1.5rem;
 }
 
+/*----------------------ADMINS-PRODUCTOS----------------------------*/
+.contenedor-productos{
+  margin: 2rem 4rem;
+}
 
+.crear-items-producto{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.precio-dolar{
+  display: flex;
+  justify-content: space-between;
+}
+.precio-dolar input{
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  border-color:rgb(209, 204, 204) ;
+  margin-right: 1rem;
+}
+.boton-edit-admin{
+  background-color: rgb(94, 207, 94);
+  padding: 0.2rem;
+  border-radius: 3px;
+}
+.boton-delete-admin{
+  background-color: rgb(255, 77, 101);
+  padding: 0.2rem;
+  border-radius: 3px;
+  margin-left: 0.4rem;
+}
+.crear-categoria{
+  display: flex;
+  justify-content: space-between;
+}
+.crear-categoria input{
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  border-color:rgb(209, 204, 204) ;
+  margin-right: 1rem;
+}
+.boton-category-admin{
+  background-color: rgb(15, 83, 21);
+  padding: 0.2rem;
+  border-radius: 3px;
+  margin-left: 0.4rem;
+  color: white;
+}
+
+.categorias{
+  display: flex;
+  justify-content: start;
+
+}
+.titulo-categorias{
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+
+}
+
+.categoria{
+  display: flex;
+  align-items: center;
+  background-color:rgb(173, 161, 161);
+  padding: 0.4rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  
+}
+
+.lista-productos-admin{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+
+.card-producto-admin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  margin-left: 15%;
+  max-width: 300px;
+  overflow: hidden;
+  padding: 1rem;
+}
+.botones-producto-admin{
+  display: flex;
+
+  justify-content: space-evenly;
+}
+
+/*vendedores-admin*/
+.contenedor-vendedores{
+  margin: 3rem 3rem;
+
+}
+
+.vendedor-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(196, 176, 176);
+  margin: 1rem 2rem;
+  padding: 0.6rem;
+  border-radius: 10px;
+}
+
+.vendedor-item span strong{
+  margin-right:0.5rem ;
+}
+
+.boton-vendedor{
+  background-color: rgb(34, 85, 34);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
 
 
 

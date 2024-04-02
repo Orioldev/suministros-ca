@@ -5,6 +5,8 @@ const Historial = () => {
 
   // Estado para el nuevo cliente
   const [nuevoCliente, setNuevoCliente] = useState({
+    
+    
     nombre: '',
     telefono: '',
     correo: '',
@@ -13,7 +15,7 @@ const Historial = () => {
   // Estado para la lista de clientes
   const [clientes, setClientes] = useState([]);
 
-  // Función para agregar un nuevo cliente
+  //AGREGAR CLIENTE NUEVO
   const agregarCliente = () => {
     // Validar que los campos no estén vacíos
     if (nuevoCliente.nombre === '' || nuevoCliente.telefono === '' || nuevoCliente.correo === '') {
@@ -33,9 +35,10 @@ const Historial = () => {
     });
   };
 
-  // Función para editar un cliente
+  // EDITAR CLIENTE
   const editarCliente = (indice) => {
     // Obtener el cliente a editar
+    console.log("Este es el valor de indice: ",indice)
     const cliente = clientes[indice];
 
     // Actualizar el estado del nuevo cliente con la información del cliente a editar
