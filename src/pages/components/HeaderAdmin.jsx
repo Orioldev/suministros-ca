@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Logo from "C:/Users/bug_code/Documents/PROYECTOS/REACT/suministros-ca/src/assets/logo.png"
+import Logo from "../../assets/logo.png";
 import { TiThMenu } from "react-icons/ti";
 import { IoMdClose } from "react-icons/io";
 import { Link } from 'react-router-dom';
