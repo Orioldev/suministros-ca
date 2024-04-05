@@ -35,11 +35,11 @@ export const Vendedor = () => {
    
 
 
-  {/*   <div className='orden-pedido'>
+     <div onClick={modalPedido} className='orden-pedido'>
       <TiShoppingCart/>
       <span>Orden </span> <p>3</p>
     </div>
-     */}
+     
     
     
     </>

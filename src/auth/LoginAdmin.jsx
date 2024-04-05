@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Logo from '../assets/logo.png';
 import { Link, useNavigate } from 'react-router-dom';
 
-export const Login = () => {
+export const LoginAdmin = () => {
 
   const navigate = useNavigate();
 
@@ -36,7 +36,7 @@ export const Login = () => {
           <h1>Import Suministros F&P, C.A</h1>  
         </div>  
         <div className='info-pagina'>
-        <p> Es una aplicacion en donde los administradores y vendedores manejan la logistica necesaria para vender los productos de la empresa <strong>Import Suministros F&P, C.A</strong>  mediante recepcion y cobro de pedidos.</p>
+        
         
         </div>
       <section>
@@ -45,12 +45,11 @@ export const Login = () => {
               </div>
               
               <div className='form-container'>
-                  <h2>Inicia Sesion</h2>
+                  <h2>Inicia Sesion como administrador</h2>
                   <form onSubmit={onUserSubmit} className='form-login ' >
                       <input value={email} onChange={inputEmailChange} type="email" placeholder='correo' />
                       <input value={password} onChange={inputPasswordChange} type="password" placeholder='contraseña' />
-                      <p>¿Quieres trabajar con nosotros?  <Link className='link'  to="/registro" ><span>postulate</span></Link> </p>
-                      <p>¿Eres administrador?  <Link className='link'  to="/login-admin" ><span>Ingresa</span></Link> </p>
+                      <p>¿Eres vendedor?  <Link className='link'  to="/login" ><span>Ingresa</span></Link> </p>
                       <button  type='submit' >Ingresar</button> 
                   </form>
               </div>

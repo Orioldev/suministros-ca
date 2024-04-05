@@ -8,6 +8,7 @@ import { Cobranzas } from './pages/vendedor/Cobranzas';
 import Productos from './pages/admin/Productos';
 import Pedidos from './pages/admin/Pedidos';
 import Vendedores from './pages/admin/Vendedores';
+import { LoginAdmin } from './auth/LoginAdmin';
 
 
 
@@ -17,6 +18,7 @@ export const SuministrosApp = () => {
             <Routes>
                 <Route path='/login' element={ <Login/> } />
                 <Route path='/registro' element={ <Registro /> } />
+                <Route path='/login-admin' element={ <LoginAdmin/> } />
                 <Route path='/vendedor' element={ <Vendedor/> } />
        
                 <Route path='/cobranzas' element={ <Cobranzas/> } />
